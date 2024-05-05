@@ -1,0 +1,35 @@
+# Django
+*.py[cod]
+__pycache__/
+*.so
+.db.sqlite3
+*.log
+.local
+.env
+media/
+
+# React
+/node_modules/
+/build/
+.npm/
+.yarn/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+Desktop.ini
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
