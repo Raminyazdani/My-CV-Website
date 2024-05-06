@@ -2,7 +2,7 @@ from django.db import models
 
 
 class File(models.Model):
-    user = models.ForeignKey('auth.User', on_delete=models.CASCADE, related_name='files')
+    user = models.ForeignKey('User', on_delete=models.CASCADE, related_name='files')
     name = models.CharField(max_length=255)
     type = models.CharField(max_length=255)
     file = models.BinaryField()
