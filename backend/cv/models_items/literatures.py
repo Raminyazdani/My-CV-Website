@@ -1,9 +1,9 @@
 from django.db import models
 
 
-class Litratures(models.Model):
+class Literatures(models.Model):
     id = models.AutoField(primary_key=True)
-    experience = models.ForeignKey('Experiences', on_delete=models.CASCADE, related_name='litratures')
+    info = models.ForeignKey('Infos', on_delete=models.CASCADE, related_name='literatures')
     title = models.CharField(max_length=255)
     journal = models.CharField(max_length=255)
     type = models.CharField(max_length=255)

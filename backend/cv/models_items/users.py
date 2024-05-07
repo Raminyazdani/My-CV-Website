@@ -2,7 +2,7 @@ from django.db import models
 import datetime
 
 
-class User(models.Model):
+class Users(models.Model):
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
     date_of_birth = models.DateField()

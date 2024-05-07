@@ -1,8 +1,8 @@
 from django.db import models
 
 
-class ReferencesItemsContactItem(models.Model):
-    references_items = models.ForeignKey('ReferenceItems', on_delete=models.CASCADE, related_name='contact_items')
+class Contacts(models.Model):
+    user = models.ForeignKey('Users', on_delete=models.CASCADE, related_name='contacts')
     key = models.CharField(max_length=255)
     value = models.CharField(max_length=255)
     type = models.CharField(max_length=45)

@@ -3,7 +3,7 @@ from django.db import models
 
 class Writers(models.Model):
     id = models.AutoField(primary_key=True)
-    litrature = models.ForeignKey('Litratures', on_delete=models.CASCADE, related_name='writers')
+    literature = models.ForeignKey('Literatures', on_delete=models.CASCADE, related_name='writers')
     abbr = models.CharField(max_length=255)
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)

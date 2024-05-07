@@ -1,8 +1,8 @@
 from django.db import models
 
 
-class WorkItems(models.Model):
-    works = models.ForeignKey('Works', on_delete=models.CASCADE, related_name='work_items')
+class Works(models.Model):
+    info = models.ForeignKey('Infos', on_delete=models.CASCADE, related_name='works')
     position = models.CharField(max_length=255)
     institute = models.CharField(max_length=255)
     description = models.CharField(max_length=255)

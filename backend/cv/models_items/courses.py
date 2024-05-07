@@ -1,8 +1,8 @@
 from django.db import models
 
 
-class CourseItems(models.Model):
-    courses = models.ForeignKey('Courses', on_delete=models.CASCADE, related_name='course_items')
+class Courses(models.Model):
+    info = models.ForeignKey('Infos', on_delete=models.CASCADE, related_name='courses')
     name = models.CharField(max_length=255)
     description = models.CharField(max_length=255)
     institute = models.CharField(max_length=255)
@@ -13,4 +13,4 @@ class CourseItems(models.Model):
     certificate_file = models.IntegerField()  # Assuming it links to a Files model or similar
 
     def __str__(self):
-        return self.name
+        return f"Course related to experience {self.info}"

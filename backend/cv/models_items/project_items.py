@@ -2,7 +2,7 @@ from django.db import models
 
 
 class ProjectItems(models.Model):
-    projects = models.ForeignKey('Projects', on_delete=models.CASCADE, related_name='project_items')
+    projects = models.ForeignKey('Projects', on_delete=models.CASCADE, related_name='datas')
     title = models.CharField(max_length=255)
     description = models.CharField(max_length=255)
     start_date = models.DateTimeField()

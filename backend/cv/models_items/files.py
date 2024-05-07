@@ -1,8 +1,8 @@
 from django.db import models
 
 
-class File(models.Model):
-    user = models.ForeignKey('User', on_delete=models.CASCADE, related_name='files')
+class Files(models.Model):
+    user = models.ForeignKey('Users', on_delete=models.CASCADE, related_name='files')
     name = models.CharField(max_length=255)
     type = models.CharField(max_length=255)
     file = models.BinaryField()

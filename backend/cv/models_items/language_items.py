@@ -1,8 +1,8 @@
 from django.db import models
 
 
-class LanguagesSubInfoItems(models.Model):
-    languages = models.ForeignKey('LanguagesItems', on_delete=models.CASCADE, related_name='sub_info_items')
+class LanguageItems(models.Model):
+    languages = models.ForeignKey('Languages', on_delete=models.CASCADE, related_name='datas')
     key = models.CharField(max_length=255)
     value = models.CharField(max_length=255)
 
