@@ -1,7 +1,8 @@
 from django.db import models
 
+from cv.models_items.ABSTRACT import ABSMODEL
 
-class Infos(models.Model):
+class Infos(ABSMODEL):
     user = models.ForeignKey('Users', on_delete=models.CASCADE, related_name='infos')  # Adjust the reference if needed
     type = models.CharField(max_length=45, null=True)
     bio = models.CharField(max_length=255, null=True)

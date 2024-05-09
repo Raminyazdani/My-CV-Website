@@ -1,8 +1,8 @@
 from django.db import models
 
+from cv.models_items.ABSTRACT import ABSMODEL
 
-class WriterContacts(models.Model):
-    id = models.AutoField(primary_key=True)
+class WriterContacts(ABSMODEL):
     writers = models.ForeignKey('Writers', on_delete=models.CASCADE, related_name='contacts')
     key = models.CharField(max_length=255)
     value = models.CharField(max_length=255)

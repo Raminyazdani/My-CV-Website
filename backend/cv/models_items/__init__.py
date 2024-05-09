@@ -7,7 +7,6 @@ from .language_items import LanguageItems
 from .languages import Languages
 from .literatures import Literatures
 from .profile_pictures import ProfilePictures
-from .project_items import ProjectItems
 from .projects import Projects
 from .reference_contacts import ReferenceContacts
 from .references import References

@@ -1,7 +1,8 @@
 from django.db import models
+from cv.models_items.ABSTRACT import ABSMODEL
 
 
-class WorkContacts(models.Model):
+class WorkContacts(ABSMODEL):
     work_items = models.ForeignKey('Works', on_delete=models.CASCADE, related_name='contacts')
     key = models.CharField(max_length=255)
     value = models.CharField(max_length=255)
