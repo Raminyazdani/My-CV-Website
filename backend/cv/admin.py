@@ -10,7 +10,6 @@ from .models_items import LanguageItems
 from .models_items import Languages
 from .models_items import Literatures
 from .models_items import ProfilePictures
-from .models_items import ProjectItems
 from .models_items import Projects
 from .models_items import ReferenceContacts
 from .models_items import References
@@ -34,7 +33,6 @@ admin.site.register(LanguageItems)
 admin.site.register(Languages)
 admin.site.register(Literatures)
 admin.site.register(ProfilePictures)
-admin.site.register(ProjectItems)
 admin.site.register(Projects)
 admin.site.register(ReferenceContacts)
 admin.site.register(References)
