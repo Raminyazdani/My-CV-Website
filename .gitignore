@@ -1,0 +1,29 @@
+# Node modules for React
+node_modules/
+
+# Build files
+/build/
+/dist/
+
+# Environment files
+.env
+*.env.local
+
+# Django specific
+*.pyc
+__pycache__/
+db.sqlite3
+media/
+
+# IDE specific
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+logs/
+
+# Operating System generated files
+.DS_Store
+Thumbs.db

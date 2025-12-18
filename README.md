@@ -75,6 +75,56 @@ The React application will be accessible at `http://localhost:3000`, and it will
 
 Detailed deployment instructions for platforms like Heroku (backend) and Netlify (frontend) will be provided here. Check back for updates or refer to the respective platform documentation for general guidelines.
 
+## Git Commit Template Format Breakdown
+
+When committing changes, it's essential to include a detailed and structured commit message. Here is the breakdown of the template format we use:
+
+### `AUTHOR`
+- **Description**: The name of the developer who made the changes.
+- **Purpose**: Useful in teams to quickly identify who to contact about specific changes.
+
+### `PROJECT`
+- **Description**: The name or identifier of the project.
+- **Purpose**: Especially helpful if you work across multiple projects or repositories.
+
+### `DATETIME`
+- **Description**: The date and time when the commit was made.
+- **Note**: Including this in the commit message can sometimes help with context. However, since Git already tracks this data for every commit, this part is typically redundant unless you have specific reasons for including it (like time zone context).
+
+### `BRANCH_NAME`
+- **Description**: The branch where the commit is made.
+- **Purpose**: Helps in understanding the development context, such as feature development or bug fixing.
+
+### `TYPE`
+- **Description**: Categorizes the commit by its purpose.
+- **Common Types**:
+  - `Feat`: Feature introduction or improvements.
+  - `Fix`: Bug fixes.
+  - `Docs`: Documentation updates or improvements.
+  - `Style`: Code formatting, fixing missing semi-colons, etc.
+  - `Refactor`: Refactoring production code.
+  - `Test`: Adding or refactoring tests; no production code change.
+  - `Chore`: Updates to grunt tasks, etc.; no production code change.
+
+### `DESC`
+- **Description**: A brief description of what the commit does.
+- **Purpose**: Should clearly and succinctly convey what was changed and why.
+
+### Commit Message Example
+Here's an example of a well-formed commit message using this template:
+
+```
+Ramin | MyProject | 2021-07-01 14:30 | feature-login | Feat : Add login functionality
+
+- Implemented basic login page with form validation.
+- Added server-side authentication logic.
+- Ensures all password data is hashed for security.
+- Related issues: #123, #456
+```
+
+This structured approach ensures that each commit message is informative and useful for both current team members and future reviewers. It also aids in maintaining a clear and traceable project history.
+
+
 ## Contributing
 
 Contributions are welcome! For major changes, please open an issue first to discuss what you would like to change. Feel free to fork the repository and submit pull requests.
