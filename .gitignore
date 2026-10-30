@@ -1,29 +1,29 @@
-# Node modules for React
-node_modules/
-
-# Build files
-/build/
-/dist/
-
-# Environment files
+# Current-tree publication boundary; old Git history may still contain data.
 .env
-*.env.local
-
-# Django specific
-*.pyc
-__pycache__/
-db.sqlite3
-media/
-
-# IDE specific
-.vscode/
-.idea/
-*.swp
-
-# Logs
+.env.*
+!.env.example
+*.db
+*.db3
+*.sqlite*
 *.log
-logs/
-
-# Operating System generated files
-.DS_Store
-Thumbs.db
+data/
+private/
+outputs/
+output/
+result/
+results/
+generated_prompts/
+email_tracking_state/
+out_batch_*/
+state_batch_*/
+USER_PROF/
+*_user_data/
+browser_profiles/
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+build/
+dist/
+.react-router/

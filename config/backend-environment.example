@@ -1,0 +1,6 @@
+# Synthetic names only. Generate a local secret; no real .env/database is published.
+CV_WEBSITE_SECRET_KEY=
+DEBUG=True
+ALLOWED_HOSTS=127.0.0.1,localhost
+CORS_ALLOWED_ORIGINS=http://localhost:5173
+CV_DATABASE_PATH=./private/demo.sqlite3
